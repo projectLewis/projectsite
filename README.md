@@ -2,4 +2,4 @@
 
 Future home of Seth's blog & portfolio site.
 
-Skeleton started with [Gatsby](https://github.com/gatsbyjs/gatsby/).
+Gatsby skeleton started with [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter).
