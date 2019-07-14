@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import {
-  FacebookShareButton,
-  LinkedinShareButton,
+  // FacebookShareButton,
+  // LinkedinShareButton,
   TwitterShareButton,
-  TelegramShareButton,
+  // TelegramShareButton,
   RedditShareButton,
-  FacebookShareCount,
-  LinkedinShareCount,
+  // FacebookShareCount,
+  // LinkedinShareCount,
   RedditShareCount,
-  FacebookIcon,
+  // FacebookIcon,
   TwitterIcon,
-  TelegramIcon,
-  LinkedinIcon,
+  // TelegramIcon,
+  // LinkedinIcon,
   RedditIcon
 } from "react-share";
 import urljoin from "url-join";
@@ -40,25 +40,6 @@ class SocialLinks extends Component {
         <TwitterShareButton url={url} title={post.title}>
           <TwitterIcon round size={iconSize} />
         </TwitterShareButton>
-        <FacebookShareButton url={url} quote={postNode.excerpt}>
-          <FacebookIcon round size={iconSize} />
-          <FacebookShareCount url={url}>
-            {count => renderShareCount(count)}
-          </FacebookShareCount>
-        </FacebookShareButton>
-        <LinkedinShareButton
-          url={url}
-          title={post.title}
-          description={postNode.excerpt}
-        >
-          <LinkedinIcon round size={iconSize} />
-          <LinkedinShareCount url={url}>
-            {count => renderShareCount(count)}
-          </LinkedinShareCount>
-        </LinkedinShareButton>
-        <TelegramShareButton url={url}>
-          <TelegramIcon round size={iconSize} />
-        </TelegramShareButton>
       </div>
     );
   }
