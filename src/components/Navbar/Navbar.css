@@ -1,0 +1,13 @@
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: turquoise;
+  font-size: 1.6rem;
+}
+
+.navbar a {
+  text-decoration: none;
+}
