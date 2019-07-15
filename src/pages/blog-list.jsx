@@ -7,8 +7,8 @@ import config from "../../data/SiteConfig";
 
 class BlogList extends React.Component {
   render() {
-    // const postEdges = this.props.data.allMarkdownRemark.edges;
     const {data: {allMarkdownRemark: {edges:postEdges}}} = this.props;
+    
     return (
       <Layout>
         <div className="bloglist-container">
