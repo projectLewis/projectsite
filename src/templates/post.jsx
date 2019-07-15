@@ -40,7 +40,6 @@ export default class PostTemplate extends React.Component {
             <UserInfo config={config} />
           </div>
         </div>
-        <Footer config={config} />
       </Layout>
     );
   }
