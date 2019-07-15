@@ -6,7 +6,7 @@ date: "07/14/2019"
 slug: "lil-Sample_Test"
 tags:
     - test
-    - huge
+    - lil
 ---
 
 # NOTE: This is a test!.
