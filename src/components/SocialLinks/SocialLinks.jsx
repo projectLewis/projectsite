@@ -1,17 +1,9 @@
 import React, { Component } from "react";
 import {
-  // FacebookShareButton,
-  // LinkedinShareButton,
   TwitterShareButton,
-  // TelegramShareButton,
   RedditShareButton,
-  // FacebookShareCount,
-  // LinkedinShareCount,
   RedditShareCount,
-  // FacebookIcon,
   TwitterIcon,
-  // TelegramIcon,
-  // LinkedinIcon,
   RedditIcon
 } from "react-share";
 import urljoin from "url-join";
