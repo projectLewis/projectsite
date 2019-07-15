@@ -8,9 +8,9 @@ class AboutPage extends Component {
     return (
       <Layout>
         {/* change classname */}
-        <div className="about-container">
+        <div className="portfolio-container">
           <Helmet title={`Portfolio | ${config.siteTitle}`} />
-          <About />
+          Replace me with a portfolio page
         </div>
       </Layout>
     );
