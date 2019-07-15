@@ -1,12 +1,17 @@
+
 * {
     box-sizing: border-box;
 }
 
 html {
     height: 100%;
+    font-size: 62.5%;
 }
 
 body {
-    margin: 0;
-    padding: 20px;
+    padding: 2.0rem;
+}
+
+#viewSettings {
+    margin: 0 auto;
 }
