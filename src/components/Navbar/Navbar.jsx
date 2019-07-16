@@ -2,9 +2,9 @@ import React from 'react';
 import {Link} from 'gatsby';
 import { Menu, Segment } from 'semantic-ui-react';
 import './Navbar.css';
+import logo from '../../../static/logos/logo-white-svg.svg';
 
 const handleLocation = local => {
-// const regEx = `${/\/blog\/lil-sample-test/}`
   if (/\/blog\/.+/.test(local)) {
     return '/blog'
   } if (local === '/blog-list') {
@@ -17,11 +17,10 @@ const handleLocation = local => {
 
 const Navbar = ({location}) => (
   <Segment inverted>
-    <Menu inverted pointing secondary>
+    <Menu inverted pointing secondary className='navContainer'>
       <Menu.Item active={location === "/" && 'home'} name='home'>
-        <Link to="/">Home</Link> 
+        <Link to="/"><img alt='project lewis logo' className='navlogo' src={logo} style={{marginTop: '-15px', marginBottom: '-10px'}} /></Link> 
       </Menu.Item>
-
       <Menu.Item active={location === "/portfolio" && 'home'} name='portfolio'>
         <Link to="portfolio">Portfolio</Link>
       </Menu.Item>
