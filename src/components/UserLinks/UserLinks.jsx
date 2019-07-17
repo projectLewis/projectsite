@@ -1,14 +1,11 @@
 import React, { Component } from "react";
 // import {Link} from 'gatsby'
-import "./UserLinks.css";
+import style from "./UserLinks.module.css";
 
 class UserLinks extends Component {
   getLinkElements() {
     const { config: {userLinks} } = this.props;
     const { labeled } = this.props;
-    // handleClick = () => {
-    //   </Link>
-    // }
     return userLinks.map((link, idx) => (
       <a key={idx.toString()} href={link.url}>
         <button type='button' key={link.label} href={link.url}>
@@ -23,7 +20,7 @@ class UserLinks extends Component {
     if (!userLinks) {
       return null;
     }
-    return <div className="user-links">{this.getLinkElements()}</div>;
+    return <div className={style.userLinks}>{this.getLinkElements()}</div>;
   }
 }
 
