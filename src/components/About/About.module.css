@@ -1,0 +1,9 @@
+ .about {
+    /* display: grid; */
+    padding: 20px 10%;
+    align-self: center;
+};
+
+.aboutHeadline {
+    text-align: center;
+}
