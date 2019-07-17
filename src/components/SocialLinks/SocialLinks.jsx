@@ -8,7 +8,7 @@ import {
 } from "react-share";
 import urljoin from "url-join";
 import config from "../../../data/SiteConfig";
-import style from "./ShareLinks.module.css";
+import style from "./SocialLinks.module.css";
 
 class SocialLinks extends Component {
   render() {
