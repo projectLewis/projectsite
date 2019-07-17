@@ -6,6 +6,7 @@ class About extends Component {
   render() {
     return (
       <div className={style.about}>
+        {/* FIGURE OUT WHY STYLING WONT LOAD FOR H1 */}
         <h1 className={style.aboutHeadline}>Seth Lewis</h1>
         {/* INSERT IMAGE ON THIS PAGE */}
         <p>Before becoming a developer, I spent 9 years in the United States Air Force. Most of my time in the Air Force was spent traveling the world on cargo airplanes. In particular I had the pleasure of supporting the National Science Foundation in Antarctica on multiple occasions. Hence the penguin.</p>

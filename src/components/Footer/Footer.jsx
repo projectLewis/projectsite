@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import UserLinks from "../UserLinks/UserLinks";
-import "./Footer.css";
+import style from "./Footer.module.css";
 
 
 class Footer extends Component {
@@ -11,9 +11,9 @@ class Footer extends Component {
       return null;
     }
     return (
-      <footer className="footer">
-        <UserLinks config={config} labeled />
-        <div className="notice-container" style={{textAlign: 'center'}}>
+      <footer className={style.footer}>
+        {/* <UserLinks config={config} labeled /> */}
+        <div className={style.noticeContainer}>
           <h4>{copyright}</h4>
         </div>
       </footer>
