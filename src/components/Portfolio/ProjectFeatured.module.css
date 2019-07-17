@@ -1,0 +1,9 @@
+.featuredProjectContainer {
+  height: 350px;
+  width: 700px;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}

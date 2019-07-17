@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
+import Portfolio from "../components/Portfolio/Portfolio";
 import Layout from "../layout";
 import config from "../../data/SiteConfig";
+
 
 class AboutPage extends Component {
   render() {
     return (
       <Layout>
-        {/* change classname */}
-        <div className="portfolio-container">
+        <div>
           <Helmet title={`Portfolio | ${config.siteTitle}`} />
-          Replace me with a portfolio page
+          <Portfolio />
         </div>
       </Layout>
     );
