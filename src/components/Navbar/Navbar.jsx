@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import { Menu, Segment } from 'semantic-ui-react';
-import './Navbar.css';
+import style from "./Navbar.module.css";
 import logo from '../../../static/logos/logo-white-svg.svg';
 
 const handleLocation = local => {
@@ -15,9 +15,9 @@ const handleLocation = local => {
 
 const Navbar = ({location}) => (
   <Segment inverted>
-    <Menu inverted pointing secondary className='navContainer'>
+    <Menu inverted pointing secondary className={style.navContainer}>
       <Menu.Item active={location === "/" && true} name='home'>
-        <Link to="/"><img alt='project lewis logo' className='navlogo' src={logo} style={{marginTop: '-15px', marginBottom: '-10px'}} /></Link> 
+        <Link to="/"><img alt='project lewis logo' className={style.navlogo} src={logo} style={{marginTop: '-15px', marginBottom: '-10px'}} /></Link> 
       </Menu.Item>
       <Menu.Item active={location === "/portfolio" && true} name='portfolio'>
         <Link to="/portfolio">Portfolio</Link>
