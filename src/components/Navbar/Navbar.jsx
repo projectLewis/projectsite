@@ -6,22 +6,20 @@ import logo from '../../../static/logos/logo-white-svg.svg';
 
 const handleLocation = local => {
   if (/\/blog\/.+/.test(local)) {
-    return '/blog'
+    return true
   } if (local === '/blog-list') {
-    return '/blog'
-  }if (/\/portfolio\/.+/.test(local)) {
-    return '/portfolio'
+    return true
   }
-    return null
+    return false
 }
 
 const Navbar = ({location}) => (
   <Segment inverted>
     <Menu inverted pointing secondary className='navContainer'>
-      <Menu.Item active={location === "/" && 'home'} name='home'>
+      <Menu.Item active={location === "/" && true} name='home'>
         <Link to="/"><img alt='project lewis logo' className='navlogo' src={logo} style={{marginTop: '-15px', marginBottom: '-10px'}} /></Link> 
       </Menu.Item>
-      <Menu.Item active={location === "/portfolio" && 'home'} name='portfolio'>
+      <Menu.Item active={location === "/portfolio" && true} name='portfolio'>
         <Link to="portfolio">Portfolio</Link>
       </Menu.Item>
 
@@ -29,7 +27,7 @@ const Navbar = ({location}) => (
         <Link to="/blog-list">Blog</Link>
       </Menu.Item>
 
-      <Menu.Item active={location === "/about" && 'about'} name='about'>
+      <Menu.Item active={location === "/about" && true} name='about'>
         <Link to="about">About</Link>
       </Menu.Item>
     </Menu>
