@@ -9,8 +9,8 @@ class UserLinks extends Component {
     // handleClick = () => {
     //   </Link>
     // }
-    return userLinks.map(link => (
-      <a href={link.url}>
+    return userLinks.map((link, idx) => (
+      <a key={idx.toString()} href={link.url}>
         <button type='button' key={link.label} href={link.url}>
           {labeled ? link.label : ""}
         </button>
