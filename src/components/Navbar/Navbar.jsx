@@ -20,7 +20,7 @@ const Navbar = ({location}) => (
         <Link to="/"><img alt='project lewis logo' className='navlogo' src={logo} style={{marginTop: '-15px', marginBottom: '-10px'}} /></Link> 
       </Menu.Item>
       <Menu.Item active={location === "/portfolio" && true} name='portfolio'>
-        <Link to="portfolio">Portfolio</Link>
+        <Link to="/portfolio">Portfolio</Link>
       </Menu.Item>
 
       <Menu.Item active={handleLocation(location)} name='blog'>
@@ -28,7 +28,7 @@ const Navbar = ({location}) => (
       </Menu.Item>
 
       <Menu.Item active={location === "/about" && true} name='about'>
-        <Link to="about">About</Link>
+        <Link to="/about">About</Link>
       </Menu.Item>
     </Menu>
   </Segment>
