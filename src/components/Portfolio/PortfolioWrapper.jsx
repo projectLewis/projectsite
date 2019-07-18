@@ -1,7 +1,8 @@
 import React from 'react'
 import ProjectFeatured from './ProjectFeatured';
 import ProjectCard from './ProjectCard';
-import style from './Portfolio.module.css'
+import style from './PortfolioWrapper.module.css'
+import ProjectDetails from './ProjectDetails';
 
 
 const Portfolio = () => {
@@ -12,10 +13,10 @@ const Portfolio = () => {
         <ProjectCard />
       </div>
       <div className={style.thinCard}>
-        <ProjectCard />
+        <ProjectDetails />
       </div>
       <div className={style.thinCard}>
-        <ProjectCard />
+        <ProjectDetails />
       </div>
       <div className={style.wideCard}>
         <ProjectCard />

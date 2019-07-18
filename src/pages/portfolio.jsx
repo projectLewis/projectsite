@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
-import Portfolio from "../components/Portfolio/Portfolio";
+import PortfolioWrapper from "../components/Portfolio/PortfolioWrapper";
 import Layout from "../layout";
 import config from "../../data/SiteConfig";
 
@@ -11,7 +11,7 @@ class AboutPage extends Component {
       <Layout>
         <div>
           <Helmet title={`Portfolio | ${config.siteTitle}`} />
-          <Portfolio />
+          <PortfolioWrapper />
         </div>
       </Layout>
     );
