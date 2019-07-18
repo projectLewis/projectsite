@@ -1,11 +1,12 @@
 .portfolioContainer {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  /* align-items: center; */
+  padding: 0 35px;
+  }
+.portfolioContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
-.cardsContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr
+.wideCard {
+  grid-column: span 2 / auto;
 }

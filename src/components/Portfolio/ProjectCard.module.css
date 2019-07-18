@@ -1,6 +1,6 @@
 .projectCardContainer {
   height: 100px;
-  width: 100px;
+  width: 100%;
   background-color: seagreen;
   display: flex;
   justify-content: center;
