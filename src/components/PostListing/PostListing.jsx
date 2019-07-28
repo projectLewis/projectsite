@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link } from "gatsby";
 
 const PostListing = ({postEdges}) => {
-    const postList = [];
+  const [postList, setPostList] = useState([])
+  
+  useEffect(() => {
+    const tempPostList = [];
     postEdges.forEach(postEdge => {
-      postList.push({
+      tempPostList.push({
         path: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
         cover: postEdge.node.frontmatter.cover,
@@ -14,6 +17,8 @@ const PostListing = ({postEdges}) => {
         timeToRead: postEdge.node.timeToRead
       });
     });
+    setPostList(tempPostList);
+  }, [])
   return (
     <div>
       {
