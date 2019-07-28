@@ -4,10 +4,10 @@ import { Menu, Segment } from 'semantic-ui-react';
 import style from "./Navbar.module.css";
 import logo from '../../../static/logos/logo-white-svg.svg';
 
-const handleLocation = local => {
-  if (/\/blog\/.+/.test(local)) {
+const handleLocation = () => {
+  if (document.querySelector('.onBlogPage')) {
     return true
-  } if (local === '/blog-list') {
+  } if (document.querySelector('.bloglist-container')) {
     return true
   }
     return false
@@ -23,7 +23,7 @@ const Navbar = ({location}) => (
         <Link to="/portfolio">Portfolio</Link>
       </Menu.Item>
 
-      <Menu.Item style={{alignSelf: 'center'}} active={handleLocation(location)} name='blog'>
+      <Menu.Item style={{alignSelf: 'center'}} active={handleLocation()} name='blog'>
         <Link to="/blog-list">Blog</Link>
       </Menu.Item>
 
