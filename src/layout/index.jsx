@@ -17,7 +17,7 @@ export default class MainLayout extends React.Component {
         <Helmet>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
-        <Navbar location={location.pathname} />
+        <Navbar location={window.location.pathname} />
         {children}
         <Footer config={config} />
       </div>

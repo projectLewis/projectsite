@@ -1,6 +1,6 @@
 .featuredProjectContainer {
   height: 350px;
-  width: 700px;
+  width: 100%;
   background-color: teal;
   display: flex;
   justify-content: center;
