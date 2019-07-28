@@ -1,20 +1,19 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { graphql } from "gatsby";
 import Layout from "../layout";
 import PostListing from "../components/PostListing/PostListing";
+import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 
-export default class CategoryTemplate extends React.Component {
+class BlogList extends React.Component {
   render() {
-    const { pageContext: {category} } = this.props;
-    const {data: {allMarkdownRemark: {edges: {postEdges}} }} = this.props;
+    const {data: {allMarkdownRemark: {edges:postEdges}}} = this.props;
+    
     return (
       <Layout>
-        <div className="category-container">
-          <Helmet
-            title={`Posts in category "${category}" | ${config.siteTitle}`}
-          />
+        <div className="bloglist-container">
+          <Helmet title={config.siteTitle} />
+          <SEO />
           <PostListing postEdges={postEdges} />
         </div>
       </Layout>
@@ -22,15 +21,15 @@ export default class CategoryTemplate extends React.Component {
   }
 }
 
+export default BlogList;
+
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query CategoryPage($category: String) {
+  query IndexQuery {
     allMarkdownRemark(
-      limit: 1000
+      limit: 2000
       sort: { fields: [fields___date], order: DESC }
-      filter: { frontmatter: { category: { eq: $category } } }
     ) {
-      totalCount
       edges {
         node {
           fields {

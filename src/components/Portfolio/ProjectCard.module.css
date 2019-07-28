@@ -1,0 +1,9 @@
+.projectCardContainer {
+  height: 100px;
+  width: 100px;
+  background-color: seagreen;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}

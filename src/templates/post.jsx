@@ -2,14 +2,17 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
+
+// components
 import UserInfo from "../components/UserInfo/UserInfo";
-import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
+
+// used for code blocks in posts
 import "./b16-tomorrow-dark.css";
-import "./post.css";
+import style from "./post.module.css";
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -33,12 +36,11 @@ export default class PostTemplate extends React.Component {
           <div>
             <h1>{post.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-            <div className="post-meta">
+            <div className={style.postMeta}>
               <PostTags tags={post.tags} />
               <SocialLinks postPath={slug} postNode={postNode} />
             </div>
             <UserInfo config={config} />
-            <Disqus postNode={postNode} />
           </div>
         </div>
       </Layout>
