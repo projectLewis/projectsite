@@ -14,7 +14,6 @@ const PostListing = ({postEdges}) => {
         timeToRead: postEdge.node.timeToRead
       });
     });
-  // }
   return (
     <div>
       {
