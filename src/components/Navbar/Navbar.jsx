@@ -14,20 +14,20 @@ const handleLocation = local => {
 }
 
 const Navbar = ({location}) => (
-  <Segment inverted>
+  <Segment inverted style={{boxShadow: "-5px 1px 9px 1px green", padding: '8px'}}>
     <Menu inverted pointing secondary className={style.navContainer}>
       <Menu.Item active={location === "/" && true} name='home'>
         <Link to="/"><img alt='project lewis logo' className={style.navlogo} src={logo} style={{marginTop: '-15px', marginBottom: '-10px'}} /></Link> 
       </Menu.Item>
-      <Menu.Item active={location === "/portfolio" && true} name='portfolio'>
+      <Menu.Item style={{alignSelf: 'center'}} active={location === "/portfolio" && true} name='portfolio'>
         <Link to="/portfolio">Portfolio</Link>
       </Menu.Item>
 
-      <Menu.Item active={handleLocation(location)} name='blog'>
+      <Menu.Item style={{alignSelf: 'center'}} active={handleLocation(location)} name='blog'>
         <Link to="/blog-list">Blog</Link>
       </Menu.Item>
 
-      <Menu.Item active={location === "/about" && true} name='about'>
+      <Menu.Item style={{alignSelf: 'center'}} active={location === "/about" && true} name='about'>
         <Link to="/about">About</Link>
       </Menu.Item>
     </Menu>
