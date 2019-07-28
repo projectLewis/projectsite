@@ -9,10 +9,8 @@ class AboutPage extends Component {
   render() {
     return (
       <Layout>
-        <div>
-          <Helmet title={`Portfolio | ${config.siteTitle}`} />
-          <PortfolioWrapper />
-        </div>
+        <Helmet title={`Portfolio | ${config.siteTitle}`} />
+        <PortfolioWrapper />
       </Layout>
     );
   }
