@@ -4,10 +4,6 @@ cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "2017/01/01"
 category: "tech"
 slug: "Bold-Mage"
-tags:
-    - programming
-    - stuff
-    - other
 ---
 # Quanto et ius coniunctis urbes
 

@@ -4,8 +4,6 @@ cover: "https://unsplash.it/1152/300/?random?SuperLong"
 category: "random"
 date: "2017/02/03"
 slug: "random-project-4"
-tags:
-    - say hi
 ---
 # Artificem honorati ore temperat Lycus quam antiquum
 

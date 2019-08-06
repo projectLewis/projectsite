@@ -4,9 +4,6 @@ cover: "https://unsplash.it/400/300/?random?BigTest"
 category: "moar"
 date: "2018/01/03"
 slug: "Big-Sample_Test"
-tags:
-    - test
-    - huge
 ---
 
 # NOTE: This "post" is based on [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and is meant to test styling of Markdown generated documents.

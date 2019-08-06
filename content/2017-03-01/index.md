@@ -4,9 +4,6 @@ cover: "https://unsplash.it/400/300/?random?AngelsofMist"
 category: "test3"
 date: "2017/03/01"
 slug: "angels-of-mist"
-tags:
-    - cheese
-    - other
 ---
 # Ab dicemur cura
 

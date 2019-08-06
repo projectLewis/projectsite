@@ -4,13 +4,6 @@ cover: "https://unsplash.it/1152/300/?random?TheButterflyoftheEdge"
 category: "tech"
 date: "2017/03/17"
 slug: "butterflys-of-the-edge"
-tags:
-    - programming
-    - more tags
-    - testing
-    - another one
-    - stuff
-    - other
 ---
 # Hanc indeploratum seram Amphitryoniadae tremulis pauperque manum
 

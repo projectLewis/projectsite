@@ -4,10 +4,6 @@ cover: "https://unsplash.it/400/300/?random?TheFallenTime"
 date: "2017/02/01"
 category: "another one"
 slug: "the-fallen_time"
-tags:
-    - test
-    - something
-    - tagging
 ---
 # Autolyci eminus retenta
 
