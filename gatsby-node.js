@@ -47,9 +47,9 @@ exports.createPages = async ({ graphql, actions }) => {
   const tagPage = path.resolve("src/templates/tag.jsx");
   const categoryPage = path.resolve("src/templates/category.jsx");
 
-  createRedirect({ fromPath: 'https://www.ivebeentoantartica.dev/*', toPath: 'https://www.ivebeentoantarctica.dev/:splat 301!', isPermanent: true, force: true })
-  createRedirect({ fromPath: 'https://ivebeentoantartica.dev/*', toPath: 'https://www.ivebeentoantarctica.dev/:splat 301!', isPermanent: true, force: true })
-  createRedirect({ fromPath: 'https://elegant-hodgkin-81bef6.netlify.com/*', toPath: 'https://www.ivebeentoantarctica.dev/:splat 301!', isPermanent: true, force: true })
+  createRedirect({ fromPath: 'https://www.ivebeentoantartica.dev/*', toPath: 'https://www.ivebeentoantarctica.dev/:splat', isPermanent: true, force: true })
+  createRedirect({ fromPath: 'https://ivebeentoantartica.dev/*', toPath: 'https://www.ivebeentoantarctica.dev/:splat', isPermanent: true, force: true })
+  createRedirect({ fromPath: 'https://elegant-hodgkin-81bef6.netlify.com/*', toPath: 'https://www.ivebeentoantarctica.dev/:splat', isPermanent: true, force: true })
 
   const markdownQueryResult = await graphql(
     `
