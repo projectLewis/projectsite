@@ -42,10 +42,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 };
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage, createRedirect } = actions;
   const postPage = path.resolve("src/templates/post.jsx");
   const tagPage = path.resolve("src/templates/tag.jsx");
   const categoryPage = path.resolve("src/templates/category.jsx");
+
+  createRedirect({ fromPath: 'https://www.ivebeentoantartica.dev/*', toPath: 'https://www.ivebeentoantarctica.dev/:splat 301!', isPermanent: true, force: true })
+  createRedirect({ fromPath: 'https://ivebeentoantartica.dev/*', toPath: 'https://www.ivebeentoantarctica.dev/:splat 301!', isPermanent: true, force: true })
+  createRedirect({ fromPath: 'https://elegant-hodgkin-81bef6.netlify.com/*', toPath: 'https://www.ivebeentoantarctica.dev/:splat 301!', isPermanent: true, force: true })
 
   const markdownQueryResult = await graphql(
     `

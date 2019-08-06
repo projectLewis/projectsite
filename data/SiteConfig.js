@@ -2,7 +2,7 @@ const config = {
   siteTitle: "Project Lewis", // Site title.
   siteTitleShort: "Proj Lewis", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Project Lewis Blog and Portolio", // Alternative site title for SEO.
-  siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
+  siteLogo: "/logos/logo-black.png", // Logo used for SEO and manifest.
   siteUrl: "https://www.projectlewis.com", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "The personal website, portfolio, and blog of Seth Lewis.", // Website description used for RSS feeds/meta description tag.
