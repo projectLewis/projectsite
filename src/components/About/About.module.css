@@ -2,7 +2,30 @@
     padding: 10px 0;
     background-color: rgba(218, 218, 218, 0.658);
     margin: -10% auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+@media only screen and (max-width: 1100px) {
+    .textWrapper {
+        margin: -20% auto;
+    }
+  }
+@media only screen and (max-width: 900px) {
+    .textWrapper {
+        margin: -30% auto;
+    }
+  }
+@media only screen and (max-width: 700px) {
+    .textWrapper {
+        margin: -40% auto;
+    }
+  }
+@media only screen and (max-width: 500px) {
+    .textWrapper {
+        margin: -50% auto;
+    }
+  }
+
 .about a {
     text-decoration: none;
     color: black;
@@ -15,7 +38,6 @@
 }
 .about h5 {
     margin-bottom: 10px;
-    /* font-size: 14px; */
 }
 .about h3 {
     margin-bottom: 20px;
@@ -28,14 +50,10 @@
 .about {
     margin-top: -1rem;
     padding: 45vh 10%;
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/penguinC17-min.jpg");
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/penguinC17-min.jpg");
-    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/penguinC17-min.jpg");
-    background-image: linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/penguinC17-min.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,111,111,0.2)), url("../../../static/imgs/penguinC17-min.jpg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    /* min-height: calc(100vh -75px); */
 }
