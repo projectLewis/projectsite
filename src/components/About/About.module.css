@@ -2,7 +2,30 @@
     padding: 10px 0;
     background-color: rgba(218, 218, 218, 0.658);
     margin: -10% auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+@media only screen and (max-width: 1100px) {
+    .textWrapper {
+        margin: -20% auto;
+    }
+  }
+@media only screen and (max-width: 900px) {
+    .textWrapper {
+        margin: -30% auto;
+    }
+  }
+@media only screen and (max-width: 700px) {
+    .textWrapper {
+        margin: -40% auto;
+    }
+  }
+@media only screen and (max-width: 500px) {
+    .textWrapper {
+        margin: -50% auto;
+    }
+  }
+
 .about a {
     text-decoration: none;
     color: black;
