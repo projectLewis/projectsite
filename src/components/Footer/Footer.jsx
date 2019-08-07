@@ -12,11 +12,11 @@ class Footer extends Component {
           <h4>
 Photo credit
             {' '}
-            <Link to="www.instagram.com/lizrishel">
+            <a href="www.instagram.com/lizrishel" alt="photographers instagram">
               <Icon style={{color: '#8a3ab9'}} name="instagram" />
               {' '}
 lizreshel
-            </Link>
+            </a>
           </h4>
         </div>
       </footer>
