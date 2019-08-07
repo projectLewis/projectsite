@@ -2,7 +2,16 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 10px 5px 5px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    height: 30px;
+}
+.footer a {
+    color: white;
+}
+.footer a:hover {
+    color: green;
 }
 
 .noticeContainer {
@@ -11,7 +20,7 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    margin-top: 25px;
+    /* margin-top: 25px; */
 }
 
 @media (max-width: 640px - 1px) {
