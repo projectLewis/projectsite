@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import {Link} from 'gatsby';
 import style from "./About.module.css";
 import Icon from "../../../node_modules/semantic-ui-react/dist/commonjs/elements/Icon/Icon";
 
@@ -10,9 +9,9 @@ class About extends Component {
         <div className={style.textWrapper}>
           <h1 className={style.Headline}>Seth Lewis</h1>
           <h5>
-            <Link title="linkedin" alt="linkedin" to="https://linkedin.com/in/sethlewis2/"><Icon color="blue" size="large" name="linkedin" /></Link>
-            <Link title="github" alt="github" to="www.github.com/projectlewis"><Icon size="large" name="github" /></Link>
-            <Link title="twitter" alt="twitter" to="www.twitter.com/projectlewis_"><Icon size="large" color="blue" inverted name="twitter" /></Link>
+            <a title="linkedin" alt="linkedin" href="https://linkedin.com/in/sethlewis2/"><Icon color="blue" size="large" name="linkedin" /></a>
+            <a title="github" alt="github" href="www.github.com/projectlewis"><Icon size="large" name="github" /></a>
+            <a title="twitter" alt="twitter" href="www.twitter.com/projectlewis_"><Icon size="large" color="blue" inverted name="twitter" /></a>
           </h5>
           <h3>Software Engineer</h3>
           <p>Before becoming a developer, I spent 9 years in the United States Air Force. Most of my time in the Air Force was spent traveling the world on cargo airplanes. In particular I had the pleasure of supporting the National Science Foundation in Antarctica on multiple occasions. Starting my appreciation for penguins.</p>
