@@ -1,17 +1,24 @@
 import React, { Component } from "react";
-// import "./About.css";
+import {Link} from 'gatsby';
 import style from "./About.module.css";
+import Icon from "../../../node_modules/semantic-ui-react/dist/commonjs/elements/Icon/Icon";
 
 class About extends Component {
   render() {
     return (
       <div className={style.about}>
-        {/* FIGURE OUT WHY STYLING WONT LOAD FOR H1 */}
-        <h1 className={style.aboutHeadline}>Seth Lewis</h1>
-        {/* INSERT IMAGE ON THIS PAGE */}
-        <p>Before becoming a developer, I spent 9 years in the United States Air Force. Most of my time in the Air Force was spent traveling the world on cargo airplanes. In particular I had the pleasure of supporting the National Science Foundation in Antarctica on multiple occasions. Hence the penguin.</p>
+        <div className={style.textWrapper}>
+          <h1 className={style.Headline}>Seth Lewis</h1>
+          <h5>
+            <Link title="linkedin" alt="linkedin" to="https://linkedin.com/in/sethlewis2/"><Icon color="blue" size="large" name="linkedin" /></Link>
+            <Link title="github" alt="github" to="www.github.com/projectlewis"><Icon size="large" name="github" /></Link>
+            <Link title="twitter" alt="twitter" to="www.twitter.com/projectlewis_"><Icon size="large" color="blue" inverted name="twitter" /></Link>
+          </h5>
+          <h3>Software Engineer</h3>
+          <p>Before becoming a developer, I spent 9 years in the United States Air Force. Most of my time in the Air Force was spent traveling the world on cargo airplanes. In particular I had the pleasure of supporting the National Science Foundation in Antarctica on multiple occasions. Starting my appreciation for penguins.</p>
 
-        <p>These days, I take the work ethic I got from the Air Force, and the dedication and self study it takes to be an aviator and apply them to learning the newest technologies. Feel free to take a look at my portfolio or github page to see what I've been up to.</p>
+          <p>These days, I take the work ethic I got from the Air Force, and the dedication and self study it takes to be an aviator and apply them to learning the newest technologies. Feel free to take a look at my portfolio or github page to see what I've been up to.</p>
+        </div>
       </div>
     );
   }

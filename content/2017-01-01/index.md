@@ -5,9 +5,7 @@ date: "2017/01/01"
 category: "tech"
 slug: "Bold-Mage"
 tags:
-    - programming
     - stuff
-    - other
 ---
 # Quanto et ius coniunctis urbes
 
