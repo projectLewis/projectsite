@@ -17,9 +17,6 @@ class Index extends React.Component {
           <Helmet title={config.siteTitle} />
           <SEO />
           <About />
-          {/* <h1>Project Lewis</h1>
-          <h3>The Home of Seth Lewis</h3>
-          <p>Seth Lewis is a web developer with a focus on backend technologies and dedication to continous learning.</p> */}
           <Footer />
         </div>
       </Layout>
