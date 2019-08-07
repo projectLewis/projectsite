@@ -1,6 +1,5 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d3305d9e-dea1-4c11-bc3b-990a01adc6dd/deploy-status)](https://app.netlify.com/sites/elegant-hodgkin-81bef6/deploys)
-
 # Project Lewis Blog & Portfolio Site
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d3305d9e-dea1-4c11-bc3b-990a01adc6dd/deploy-status)](https://app.netlify.com/sites/elegant-hodgkin-81bef6/deploys)
 
 Home of Seths portfolio site.
 Deploy is the main repo.
