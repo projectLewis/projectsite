@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import {Link} from 'gatsby';
 import style from "./About.module.css";
 import Icon from "../../../node_modules/semantic-ui-react/dist/commonjs/elements/Icon/Icon";
 
