@@ -1,18 +1,18 @@
 const config = {
-  siteTitle: "Project Lewis", // Site title.
-  siteTitleShort: "Proj Lewis", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "Project Lewis Blog and Portolio", // Alternative site title for SEO.
+  siteTitle: "Ive Been To Antarctica", // Site title.
+  siteTitleShort: "Antarctica Dev", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleAlt: "Antarctica Dev's Blog and Portolio", // Alternative site title for SEO.
   siteLogo: "/logos/logo-black.png", // Logo used for SEO and manifest.
-  siteUrl: "https://www.projectlewis.com", // Domain of your website without pathPrefix.
+  siteUrl: "https://www.ivebeentoantarctica.dev", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "The personal website, portfolio, and blog of Seth Lewis.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
-  siteFBAppID: "1825356251115265", // FB Application ID for using app insights
-  googleAnalyticsID: "UA-47311644-5", // GA tracking ID.
+  // siteFBAppID: "1825356251115265", // FB Application ID for using app insights
+  // googleAnalyticsID: "UA-47311644-5", // GA tracking ID.
   // disqusShortname: "https-vagr9k-github-io-gatsby-advanced-starter", // Disqus shortname.
   postDefaultCategoryID: "coding", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
-  dateFormat: "DD/MM/YYYY", // Date format for display.
+  dateFormat: "MM/DD/YYYY", // Date format for display.
   userName: "Seth Lewis", // Username to display in the author segment.
   userEmail: "seth@projectlewis.com", // Email used for RSS feed's author segment
   userTwitter: "projectlewis_", // Optionally renders "Follow Me" in the UserInfo segment.
