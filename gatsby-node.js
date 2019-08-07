@@ -13,7 +13,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, "title")
     ) {
-      slug = `/${_.kebabCase(node.frontmatter.title)}`;
+      slug = `/blog/${_.kebabCase(node.frontmatter.title)}`;
     } else if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
       slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
     } else if (parsedFilePath.dir === "") {
@@ -24,7 +24,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
     if (Object.prototype.hasOwnProperty.call(node, "frontmatter")) {
       if (Object.prototype.hasOwnProperty.call(node.frontmatter, "slug"))
-        slug = `/${_.kebabCase(node.frontmatter.slug)}`;
+        slug = `/blog/${_.kebabCase(node.frontmatter.slug)}`;
       if (Object.prototype.hasOwnProperty.call(node.frontmatter, "date")) {
         const date = moment(node.frontmatter.date, siteConfig.dateFromFormat);
         if (!date.isValid)
@@ -42,10 +42,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 };
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage, createRedirect } = actions;
   const postPage = path.resolve("src/templates/post.jsx");
   const tagPage = path.resolve("src/templates/tag.jsx");
   const categoryPage = path.resolve("src/templates/category.jsx");
+
+  createRedirect({ fromPath: 'https://www.ivebeentoantartica.dev/*', toPath: 'https://www.ivebeentoantarctica.dev/:splat', isPermanent: true, force: true })
+  createRedirect({ fromPath: 'https://ivebeentoantartica.dev/*', toPath: 'https://www.ivebeentoantarctica.dev/:splat', isPermanent: true, force: true })
+  createRedirect({ fromPath: 'https://elegant-hodgkin-81bef6.netlify.com/*', toPath: 'https://www.ivebeentoantarctica.dev/:splat', isPermanent: true, force: true })
 
   const markdownQueryResult = await graphql(
     `

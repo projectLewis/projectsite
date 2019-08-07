@@ -1,0 +1,12 @@
+.portfolioContainer {
+  padding: 0 35px;
+  }
+.portfolioContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.wideCard {
+  grid-column: span 2 / auto;
+}
