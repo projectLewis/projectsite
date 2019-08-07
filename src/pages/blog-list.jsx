@@ -4,6 +4,7 @@ import Layout from "../layout";
 import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
+import style from "./bloglist.module.css";
 
 class BlogList extends React.Component {
   render() {
@@ -11,7 +12,7 @@ class BlogList extends React.Component {
     
     return (
       <Layout>
-        <div className="bloglist-container">
+        <div className={style.bloglistContainer}>
           <Helmet title={config.siteTitle} />
           <SEO />
           <PostListing postEdges={postEdges} />
