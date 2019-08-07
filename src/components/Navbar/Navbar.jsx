@@ -25,10 +25,6 @@ const Navbar = () => {
         <Menu.Item style={{alignSelf: 'center', marginTop: '-15px', marginBottom: '-10px'}} active={blogActive} name='blog'>
           <Link activeClassName="active item" to="/blog-list">Blog</Link>
         </Menu.Item>
-
-        <Menu.Item style={{alignSelf: 'center', marginTop: '-15px', marginBottom: '-10px'}} name='about'>
-          <Link activeClassName="active item" to="/about">About</Link>
-        </Menu.Item>
       </Menu>
     </Segment>
     )

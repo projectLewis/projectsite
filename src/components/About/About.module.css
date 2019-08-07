@@ -1,9 +1,39 @@
- .about {
-    /* display: grid; */
-    padding: 20px 10%;
-    align-self: center;
-};
+.textWrapper {
+    padding: 10px 0;
+    background-color: rgba(218, 218, 218, 0.658);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: green;
+}
+h1 {
+    font-size: 35px;
+}
+h5 {
+    margin-bottom: 10px;
+    /* font-size: 14px; */
+}
+h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+p {
+    padding: 0 20px 20px 20px;
+}
 
-.aboutHeadline {
+.about {
+    margin-top: -1rem;
+    padding: 20% 0 50vh 0 ;
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/c17Penguin2.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/c17Penguin2.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/c17Penguin2.jpg");
+    background-image: linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/c17Penguin2.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
 }
