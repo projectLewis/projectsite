@@ -3,3 +3,8 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.onBlogPage h1 {
+    font-size: 32px;
+    text-align: center;
+}

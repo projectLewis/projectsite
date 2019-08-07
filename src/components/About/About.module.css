@@ -28,10 +28,10 @@
 .about {
     margin-top: -1rem;
     padding: 45vh 10%;
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/c17Penguin2.jpg");
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/c17Penguin2.jpg");
-    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/c17Penguin2.jpg");
-    background-image: linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/c17Penguin2.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/penguinC17-min.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/penguinC17-min.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/penguinC17-min.jpg");
+    background-image: linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../../../static/imgs/penguinC17-min.jpg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
