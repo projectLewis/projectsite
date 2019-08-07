@@ -1,5 +1,7 @@
 # Project Lewis Blog & Portfolio Site
 
-Future home of Seth's blog & portfolio site.
-
-Gatsby skeleton started with [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter).
+Home of Seths portfolio site.
+Deploy is the main repo.
+Blog posts on postupdates.
+portfolio on portfolio branch.
+Template changes & layout adjustments on working.
