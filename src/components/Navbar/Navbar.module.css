@@ -3,14 +3,14 @@
   justify-content: space-evenly;
 }
 
+.item {
+  background-color: blue;
+  color: red;
+}
+
 
 .navlogo {
   height: 50px;
   width: 50px;
   padding: 0;
 }
-
-/* .segmentHolder {
-  box-shadow: -5px 1px 9px 1px green;
-  padding: 8px;
-} */
