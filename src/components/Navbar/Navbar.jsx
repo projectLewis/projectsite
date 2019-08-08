@@ -13,7 +13,7 @@ const Navbar = () => {
     return setBlogActive(false)
   }, []);
   return (
-    <Segment inverted className={style.segmentHolder}>
+    <Segment inverted style={{boxShadow: "-5px 1px 9px 1px green", padding: "8px"}}>
       <Menu inverted pointing secondary className={style.navContainer}>
         <Menu.Item name='home'>
           <Link to="/"><img alt='project lewis logo' className={style.navlogo} src={logo} style={{marginTop: '-15px', marginBottom: '-10px'}} /></Link> 
