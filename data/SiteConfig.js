@@ -17,7 +17,8 @@ const config = {
   userEmail: "seth@projectlewis.com", // Email used for RSS feed's author segment
   userTwitter: "projectlewis_", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Antarctica", // User location to display in the author segment.
-  userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
+  // userAvatar: "https://api.adorable.io/avatars/150/test.png", 
+  // User avatar to display in the author segment.
   userDescription: "Seth is a Web Developer from Baltimore. When hes not talking tech, likes to brag about getting to travel to Antarctica a ton.", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
