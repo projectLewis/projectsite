@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {Icon} from "semantic-ui-react";
 import style from "./About.module.css";
-import sethHeadshot from "../../../static/imgs/sethHeadshot.jpg"
+import sethHeadshot from "../../../static/imgs/sethHeadshotmin.jpg"
 
 class About extends Component {
   render() {
