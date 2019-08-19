@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import style from "./About.module.css";
 import Icon from "../../../node_modules/semantic-ui-react/dist/commonjs/elements/Icon/Icon";
+import sethHeadshot from "../../../static/imgs/sethHeadshot.jpg"
 
 class About extends Component {
   render() {
@@ -8,6 +9,7 @@ class About extends Component {
       <div className={style.about}>
         <div className={style.textWrapper}>
           <h1 className={style.Headline}>Seth Lewis</h1>
+          <img className={style.headshot} alt="headshot of seth" src={sethHeadshot} />
           <h5>
             <a title="linkedin" alt="linkedin" href="https://linkedin.com/in/sethlewis2/"><Icon color="blue" size="large" name="linkedin" /></a>
             <a title="github" alt="github" href="www.github.com/projectlewis"><Icon size="large" name="github" /></a>

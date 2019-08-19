@@ -40,3 +40,9 @@
     align-items: center;
     min-height: calc(100vh - 106px);
 }
+
+.headshot {
+    height: 14.0625rem; 
+    width: 14.0625rem;
+    border-radius: 50%;
+}
