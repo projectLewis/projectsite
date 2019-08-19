@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+import {Icon} from "semantic-ui-react";
 import style from "./About.module.css";
-import Icon from "../../../node_modules/semantic-ui-react/dist/commonjs/elements/Icon/Icon";
 import sethHeadshot from "../../../static/imgs/sethHeadshot.jpg"
 
 class About extends Component {
