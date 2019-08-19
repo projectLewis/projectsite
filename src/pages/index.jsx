@@ -12,7 +12,6 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        {/* change classname */}
         <div className="index-container">
           <Helmet title={config.siteTitle} />
           <SEO />
